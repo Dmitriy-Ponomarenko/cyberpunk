@@ -7,7 +7,7 @@
     "dev": "vite",
     "predeploy": " npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "vite build --base=/portfolio_d/",
+    "build": "vite build --base=/cyberpunk/",
     "preview": "vite preview",
     "format": "prettier --write ."
   },
