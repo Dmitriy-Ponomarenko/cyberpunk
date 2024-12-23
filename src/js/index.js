@@ -1,3 +1,3 @@
 // src/js/index.js
 
-export function initializeApp() {}
+export default function initializeApp() {}
