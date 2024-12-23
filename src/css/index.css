@@ -99,10 +99,15 @@ input {
 }
 
 .section {
-  max-width: 375px;
   margin: auto;
-  padding: 0 12px;
   margin-bottom: 70px;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 12px;
+  position: relative;
 }
 
 .section-title {
@@ -145,8 +150,9 @@ select:-webkit-autofill:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .section {
+  .container {
     padding: 0 36px;
+    max-width: 768px;
   }
 
   h1,
@@ -170,7 +176,8 @@ select:-webkit-autofill:hover {
 }
 
 @media screen and (min-width: 1440px) {
-  .section {
+  .container {
     padding: 0 320px;
+    max-width: 1440px;
   }
 }

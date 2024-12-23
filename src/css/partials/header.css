@@ -1,2 +1,25 @@
 .header {
+  display: flex;
+}
+
+.header-logo {
+  width: 200px;
+  height: 50px;
+}
+
+.header-social {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    width: 296px;
+    height: 74px;
+  }
+
+  .header-social {
+    width: 30px;
+    height: 30px;
+  }
 }
