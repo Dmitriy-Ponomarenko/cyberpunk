@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Archangelsk';
+  src: url('../fonts/Archangelsk\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --white: #ffffff;
   --yellow: #f8f200;
