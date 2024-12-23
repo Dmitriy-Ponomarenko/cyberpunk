@@ -5,10 +5,24 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "predeploy": " npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build --base=/portfolio_d/",
+    "preview": "vite preview",
+    "format": "prettier --write ."
   },
   "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "gh-pages": "^6.2.0",
+    "glob": "^11.0.0",
+    "postcss": "^8.4.49",
+    "postcss-sort-media-queries": "^5.2.0",
+    "prettier": "^3.4.2",
     "vite": "^6.0.3"
+  },
+  "author": "Dmitry Ponomarenko <dponomar19@gmail.com>",
+  "dependencies": {
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
   }
 }
