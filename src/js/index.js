@@ -1,3 +1,7 @@
 // src/js/index.js
 
-export function initializeApp() {}
+import { initializeHeroSlider } from "./partials/hero.js";
+
+export function initializeApp() {
+  initializeHeroSlider();
+}
