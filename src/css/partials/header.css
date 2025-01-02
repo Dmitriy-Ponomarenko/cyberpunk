@@ -1,5 +1,21 @@
-.header {
+.header-section {
   display: flex;
+  padding: 20px 12px 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.header-navigation-container {
+  display: flex;
+  gap: 30px;
 }
 
 .header-logo {
@@ -13,6 +29,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header-section {
+    padding: 20px 36px 0;
+  }
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .header-navigation-container {
+    gap: 25px;
+  }
+
   .header-logo {
     width: 296px;
     height: 74px;
@@ -21,5 +51,15 @@
   .header-social {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-section {
+    padding: 20px 64px 0;
+  }
+
+  .header-navigation-container {
+    gap: 40px;
   }
 }

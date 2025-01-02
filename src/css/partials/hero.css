@@ -1,2 +1,39 @@
-.hero {
+.hero-section {
+  margin-top: -115px;
+}
+
+.hero-container {
+  height: 713px;
+  width: 100%;
+  padding: 0;
+  z-index: -999;
+}
+
+.swiper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    margin-top: -131px;
+  }
+
+  .hero-container {
+    height: 1000px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }
