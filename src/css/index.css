@@ -100,7 +100,7 @@ input {
 
 .section {
   margin: auto;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .container {
