@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import 'swiper/swiper-bundle.css';
 
 export function initializeHeroSlider() {

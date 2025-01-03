@@ -1,2 +1,146 @@
 .ad-section {
+  background-color: var(--yellow);
+}
+
+.ad-container {
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+}
+
+.ad-container-item-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.ad-title {
+  margin-bottom: 25px;
+}
+
+.ad-content {
+  color: var(--black);
+  margin-bottom: 25px;
+}
+
+.ad-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 15px;
+}
+
+.ad-list-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.ad-list-item-content {
+  color: var(--black);
+line-height: normal;
+}
+
+.ad-list-item-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.ad-svg-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 13.7px;
+}
+
+.ad-svg-container-item:nth-child(1) {
+  width: 44px;
+  height: 44px;
+}
+.ad-svg-container-item:nth-child(2) {
+  width: 50px;
+  height: 10px;
+}
+.ad-svg-container-item:nth-child(3) {
+  width: 175px;
+  height: 44px;
+}
+
+.ad-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 50px;
+  height: 60px;
+  width: 184px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--yellow);
+  background-color: var(--black);
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.ad-button:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+  border-color: var(--yellow);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ad-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: var(--yellow-dark);
+  color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .ad-container {
+    flex-direction: row;
+    gap:32px;
+  }
+
+  .ad-list-item-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ad-list-item {
+    gap: 10px;
+  }
+
+  .ad-svg-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .ad-svg-container-item:nth-child(1) {
+    width: 80px;
+    height: 80px;
+  }
+  .ad-svg-container-item:nth-child(2) {
+    width: 90px;
+    height: 19px;
+  }
+  .ad-svg-container-item:nth-child(3) {
+    width: 320px;
+    height: 79px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ad-container-item-first {
+    gap: 26px;
+  }
+
+  .ad-svg-container {
+    flex-direction: row;
+  }
 }
