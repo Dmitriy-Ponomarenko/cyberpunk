@@ -5,7 +5,7 @@
 .ad-container {
   display: flex;
   flex-direction: column;
-  gap:40px;
+  gap: 40px;
 }
 
 .ad-container-item-first {
@@ -40,7 +40,7 @@
 
 .ad-list-item-content {
   color: var(--black);
-line-height: normal;
+  line-height: normal;
 }
 
 .ad-list-item-icon {
@@ -104,7 +104,7 @@ line-height: normal;
 @media screen and (min-width: 768px) {
   .ad-container {
     flex-direction: row;
-    gap:32px;
+    gap: 32px;
   }
 
   .ad-list-item-icon {
