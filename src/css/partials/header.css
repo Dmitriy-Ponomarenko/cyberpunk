@@ -1,7 +1,6 @@
 .header-section {
   display: flex;
   padding: 20px 12px 0;
-  z-index: 999;
   width: 100%;
 }
 
@@ -11,6 +10,7 @@
   gap: 10px;
   width: 100%;
   align-items: center;
+  z-index: 999;
 }
 
 .header-navigation-container {
