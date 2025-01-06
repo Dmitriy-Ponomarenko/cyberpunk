@@ -93,6 +93,7 @@ button {
   color: currentColor;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 input {
@@ -101,7 +102,8 @@ input {
 
 .section {
   margin: auto;
-  padding-bottom: 70px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .container {
@@ -152,7 +154,7 @@ select:-webkit-autofill:hover {
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 36px;
+    padding: 0 32px;
     max-width: 768px;
   }
 
