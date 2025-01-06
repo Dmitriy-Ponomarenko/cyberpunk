@@ -20,9 +20,10 @@
 }
 
 .swiper-slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-size: cover; */
+  object-fit: cover;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
   height: 100%;
 }
 
@@ -36,5 +37,4 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-}
+@media screen and (min-width: 1280px) {}
