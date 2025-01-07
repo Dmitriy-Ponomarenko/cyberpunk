@@ -1,6 +1,27 @@
 .contest-section {
+  background-color: var(--black);
+  padding-bottom: 70px;
 }
 
-.contest-svg {
-  fill: transparent;
+
+
+.line-gradient {
+  height: 70px;
+  /* width: 320px; */
+  width: 100%;
+  background-image:
+    url('/img/mobile/contest/mobile-transitionUp.jpg'),
+    linear-gradient(to bottom, var(--white), var(--black));
+  /* background-size: cover; */
+  background-repeat: repeat;
+  border: 0;
 }
+
+.a {
+  color: white;
+}
+
+
+/* .contest-svg {
+  fill: transparent;
+} */
