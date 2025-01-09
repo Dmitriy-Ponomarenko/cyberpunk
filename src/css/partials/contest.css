@@ -1,27 +1,192 @@
 .contest-section {
   background-color: var(--black);
   padding-bottom: 70px;
+
+  height: 1000px;
 }
-
-
 
 .line-gradient {
   height: 70px;
   /* width: 320px; */
   width: 100%;
-  background-image:
-    url('/img/mobile/contest/mobile-transitionUp.jpg'),
+  background-image: url('/img/mobile/contest/mobile-transitionUp.jpg'),
     linear-gradient(to bottom, var(--white), var(--black));
   /* background-size: cover; */
   background-repeat: repeat;
   border: 0;
 }
 
-.a {
-  color: white;
+.stock-container {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 62px;
+  height: 62px; */
+
 }
 
+.contest-stock-svg {
+  fill: transparent;
+  stroke: var(--yellow);
+  width: 62px;
+  height: 62px;
+}
+
+.text-action-in-swg {
+  position: absolute;
+  color: var(--yellow);
+  font-family: 'Archangelsk', sans-serif;
+  font-size: 14px;
+
+  transform: rotate(-45deg);
+}
 
 /* .contest-svg {
   fill: transparent;
+  height: 100px;
+  width: 100px;
+  stroke: var(--yellow);
 } */
+
+.contest-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.contest-item-first {
+  height: 131px;
+
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+
+.contest-item-second {
+  margin-bottom: 70px;
+}
+
+.console-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+
+}
+
+
+.wrapper-for-console {
+  position: relative;
+  width: 132px;
+  /* height: 131px; */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.console-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.console {
+  position: absolute;
+  top: 7px;
+  left: 47px;
+}
+
+
+.promotional-message {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 400;
+
+  margin-bottom: 25px;
+}
+
+.text {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.about-Cyberpunk-span {
+  color: var(--light-blue);
+  font-weight: 700;
+}
+
+.form {
+  width: 100%;
+  /* display: flex; */
+}
+
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+
+.form-input {
+  width: 100%;
+  background-color: transparent;
+
+  outline: 0px solid transparent;
+
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+
+
+}
+
+.form-name-and-email {
+  border: 0;
+  border-bottom: 1px solid var(--grey);
+
+  transition: border-bottom 250ms ease-in-out;
+
+  padding: 13px 0px;
+}
+
+.form-name-and-email:hover,
+.form-name-and-email:focus {
+  border-bottom: 1px solid var(--light-blue);
+}
+
+.form-input::placeholder {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.form-upload-photo {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px dashed var(--grey);
+
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2px;
+}
+
+.upload-photo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
