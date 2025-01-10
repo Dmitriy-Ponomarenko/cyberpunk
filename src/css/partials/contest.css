@@ -56,8 +56,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-
 }
 
 .contest-item-first {
@@ -189,4 +187,101 @@
   opacity: 0;
   position: absolute;
   z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================== TABLET ========================== */
+
+@media screen and (min-width: 768px) {
+
+  .contest-list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 32px;
+
+  }
+
+  .contest-item {
+    width: 332px;
+  }
+
+  .contest-item-first {
+
+    width: 332px;
+    /* height: 100%; */
+    /* margin-top: 95px; */
+    margin-top: 125px;
+    margin-bottom: 0px;
+  }
+
+  .console-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+
+  }
+
+
+  .wrapper-for-console {
+    /* width: 460px; */
+    width: 332px;
+    height: 326px;
+  }
+
+  .wrapper-for-console-first-element {
+    margin-bottom: 30px;
+  }
+
+  .console {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+  }
+
+  .contest-item-second {
+    /* margin-top: 162px; */
+    margin-top: 150px;
+    /* margin-bottom: 92px; */
+    margin-bottom: 70px;
+  }
+
+
+  .promotional-message {
+    font-size: 62px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 188.89%;
+  }
+
+
+
+
+
+
+
 }
