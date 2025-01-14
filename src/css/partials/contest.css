@@ -304,7 +304,8 @@
   .contest-item-first {
     order: 3;
     /* width: 100%; */
-    width: 788px;
+    /* width: 788px; */
+    width: 970px;
 
     margin-top: 0;
   }
