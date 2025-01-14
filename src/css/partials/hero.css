@@ -21,6 +21,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+  user-select: none;
 }
 
 .swiper-slide {
@@ -39,8 +40,10 @@
   }
 
   .hero-container {
-    height: 1000px;
+    height: 100vh;
+    max-height: 1000px;
   }
 }
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1280px) {
+}

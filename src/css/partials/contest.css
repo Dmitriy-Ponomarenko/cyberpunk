@@ -2,7 +2,9 @@
   background-color: var(--black);
   padding-bottom: 70px;
 
-  height: 1000px;
+  /* height: 1000px; */
+  position: relative;
+  z-index: 9999999;
 }
 
 .line-gradient {
@@ -13,7 +15,6 @@
     linear-gradient(to bottom, var(--white), var(--black));
   /* background-size: cover; */
   background-repeat: repeat;
-  border: 0;
 }
 
 .stock-container {
@@ -26,7 +27,6 @@
 
   /* width: 62px;
   height: 62px; */
-
 }
 
 .contest-stock-svg {
@@ -74,14 +74,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-
 }
-
 
 .wrapper-for-console {
   position: relative;
   width: 132px;
-  /* height: 131px; */
+  height: 131px;
 
   /* display: flex;
   justify-content: center;
@@ -99,7 +97,6 @@
   top: 7px;
   left: 47px;
 }
-
 
 .promotional-message {
   color: var(--white);
@@ -132,7 +129,6 @@
   gap: 35px;
 }
 
-
 .form-input {
   width: 100%;
   background-color: transparent;
@@ -144,8 +140,6 @@
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
-
-
 }
 
 .form-name-and-email {
@@ -175,12 +169,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   border: 1px dashed var(--grey);
 
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
   text-underline-offset: 2px;
+
+  transition: text-decoration-color 250ms ease-in-out;
+}
+
+.form-upload-photo:hover,
+.form-upload-photo:focus {
+  text-decoration-color: var(--light-blue);
 }
 
 .upload-photo {
@@ -189,28 +191,26 @@
   z-index: -1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========================== TABLET ========================== */
 
 @media screen and (min-width: 768px) {
+  .stock-container {
+    position: absolute;
+    top: 15px;
+    left: 32px;
+  }
+
+  .contest-stock-svg {
+    width: 132px;
+    height: 132px;
+  }
+
+  .text-action-in-swg {
+    font-size: 30px;
+    line-height: normal;
+
+    transform: rotate(-45deg);
+  }
 
   .contest-list {
     display: flex;
@@ -218,8 +218,7 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 32px;
-
+    column-gap: 32px;
   }
 
   .contest-item {
@@ -227,12 +226,19 @@
   }
 
   .contest-item-first {
-
     width: 332px;
     /* height: 100%; */
     /* margin-top: 95px; */
     margin-top: 125px;
     margin-bottom: 0px;
+  }
+
+  .contest-item-second {
+    /* margin-top: 162px; */
+    margin-top: 150px;
+
+    /* margin-bottom: 98px; */
+    margin-bottom: 50px;
   }
 
   .console-list {
@@ -241,9 +247,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 0px;
-
   }
-
 
   .wrapper-for-console {
     /* width: 460px; */
@@ -261,13 +265,6 @@
     left: 120px;
   }
 
-  .contest-item-second {
-    /* margin-top: 162px; */
-    margin-top: 150px;
-    /* margin-bottom: 92px; */
-    margin-bottom: 70px;
-  }
-
 
   .promotional-message {
     font-size: 62px;
@@ -278,10 +275,88 @@
     line-height: 188.89%;
   }
 
+  .form-input {
+    font-size: 18px;
+  }
+
+  .form-input::placeholder {
+    font-size: 18px;
+  }
 
 
+}
 
+/* ========================= DESKTOP ========================= */
 
+@media screen and (min-width: 1440px) {
+  .stock-container {
+    left: 64px;
+  }
 
+  .contest-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0;
+  }
 
+  .contest-item-first {
+    order: 3;
+    /* width: 100%; */
+    width: 788px;
+
+    margin-top: 0;
+  }
+
+  .contest-item-second {
+    order: 1;
+    width: 952px;
+
+    margin-top: 70px;
+    margin-bottom: 25px;
+    margin-right: 100px;
+  }
+
+  .contest-item-three {
+    order: 2;
+    width: 460px;
+
+    margin-top: 73px;
+    margin-right: 32px;
+  }
+
+  .console-list {
+    flex-direction: row;
+  }
+
+  .wrapper-for-console {
+    width: 460px;
+    height: 456px;
+  }
+
+  .wrapper-for-console-first-element {
+    margin: 0;
+    margin-right: -132px;
+  }
+
+  .console-background {
+    width: 460px;
+    height: 456px;
+
+    z-index: -99;
+  }
+
+  .console {
+    width: 296px;
+    height: 351px;
+
+    top: 25px;
+    left: 164px;
+  }
+
+  .promotional-message {
+    margin-left: 164px;
+    margin-bottom: 39px;
+  }
 }
