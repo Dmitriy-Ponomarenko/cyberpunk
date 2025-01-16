@@ -1,13 +1,14 @@
 .contest-section {
   background-color: var(--black);
-  padding-bottom: 70px;
 
   /* height: 1000px; */
   position: relative;
   z-index: 9999999;
+
+  padding-bottom: 70px;
 }
 
-.line-gradient {
+.line-gradient-top {
   height: 70px;
   /* width: 320px; */
   width: 100%;
@@ -59,6 +60,7 @@
 }
 
 .contest-item-first {
+  user-select: none;
   height: 131px;
 
   margin-top: 55px;
@@ -190,6 +192,91 @@
   position: absolute;
   z-index: -1;
 }
+
+.form-btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 182px;
+  height: 60px;
+  background-color: var(--yellow);
+
+  color: var(--black);
+  font-family: 'Roboto', sans-serif;
+  line-height: normal;
+
+  transition: background-color 250ms ease-in-out;
+  margin-bottom: 14px;
+}
+
+.form-btn-submit:hover,
+.form-btn-submit:focus {
+  background-color: var(--light-blue);
+}
+
+
+
+.form-label-data-processing {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: normal;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.fake-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--grey);
+  cursor: pointer;
+  fill: transparent;
+
+  transition: border-color 250ms ease-in-out;
+}
+
+.fake-checkbox-icon {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.form-input-data-processing {
+  margin-top: 8px;
+  margin-left: 6px;
+  display: inline-block;
+}
+
+.form-input-data-processing:hover+.form-label-data-processing .fake-checkbox {
+  border-color: var(--light-blue);
+}
+
+.form-input-data-processing:active+.form-label-data-processing .fake-checkbox {
+  border-color: var(--light-blue);
+}
+
+.form-input-data-processing:checked+.form-label-data-processing .fake-checkbox-icon {
+  opacity: 1;
+}
+
+.line-gradient-bottom {
+  height: 70px;
+  /* width: 320px; */
+  width: 100%;
+  background-image: url('/img/mobile/contest/mobile-transitionDown.jpg'),
+    linear-gradient(to bottom, var(--black), var(--yellow));
+  /* background-size: cover; */
+  background-repeat: repeat;
+}
+
 
 /* ========================== TABLET ========================== */
 
