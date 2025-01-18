@@ -1,6 +1,7 @@
 .add-section {
   background-color: var(--yellow);
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .add-container {

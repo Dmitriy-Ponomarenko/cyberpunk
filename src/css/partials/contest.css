@@ -144,6 +144,14 @@
   line-height: normal;
 }
 
+.form-input::placeholder {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+
 .form-name-and-email {
   border: 0;
   border-bottom: 1px solid var(--grey);
@@ -158,22 +166,30 @@
   border-bottom: 1px solid var(--light-blue);
 }
 
-.form-input::placeholder {
-  color: var(--white);
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: normal;
-}
 
 .form-upload-photo {
   height: 120px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 
   border: 1px dashed var(--grey);
+
+
+
+}
+
+.form-upload-photo:hover>.text-upload-photo,
+.form-upload-photo:focus>.text-upload-photo {
+  text-decoration-color: var(--light-blue);
+}
+
+.text-upload-photo {
+  color: var(--white);
+  font-weight: 300;
+  line-height: normal;
 
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
@@ -182,9 +198,8 @@
   transition: text-decoration-color 250ms ease-in-out;
 }
 
-.form-upload-photo:hover,
-.form-upload-photo:focus {
-  text-decoration-color: var(--light-blue);
+.format-upload-photo {
+  display: none;
 }
 
 .upload-photo {
@@ -213,8 +228,6 @@
 .form-btn-submit:focus {
   background-color: var(--light-blue);
 }
-
-
 
 .form-label-data-processing {
   display: flex;
@@ -245,6 +258,10 @@
 }
 
 .fake-checkbox-icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
   opacity: 0;
   transition: opacity 250ms ease-in-out;
 }
@@ -276,7 +293,6 @@
   /* background-size: cover; */
   background-repeat: repeat;
 }
-
 
 /* ========================== TABLET ========================== */
 
@@ -316,7 +332,8 @@
     width: 332px;
     /* height: 100%; */
     /* margin-top: 95px; */
-    margin-top: 125px;
+    /* margin-top: 125px; */
+    margin-top: 210px;
     margin-bottom: 0px;
   }
 
@@ -333,7 +350,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 0px;
+    /* gap: 0px; */
+    gap: 40px;
   }
 
   .wrapper-for-console {
@@ -352,7 +370,6 @@
     left: 120px;
   }
 
-
   .promotional-message {
     font-size: 62px;
   }
@@ -370,7 +387,17 @@
     font-size: 18px;
   }
 
+  .text-upload-photo {
+    font-size: 18px;
+  }
 
+  .form-btn-submit {
+    width: 192px;
+    height: 59px;
+    font-size: 18px;
+
+    margin-bottom: 15px;
+  }
 }
 
 /* ========================= DESKTOP ========================= */
@@ -392,7 +419,6 @@
     order: 3;
     /* width: 100%; */
     width: 788px;
-
 
     margin-top: 0;
   }
@@ -447,5 +473,17 @@
   .promotional-message {
     margin-left: 164px;
     margin-bottom: 39px;
+  }
+
+  .text-upload-photo {
+    margin-bottom: 7px;
+  }
+
+  .format-upload-photo {
+    display: block;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: normal;
   }
 }
