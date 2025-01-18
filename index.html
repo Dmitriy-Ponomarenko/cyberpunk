@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/cyberpunk/assets/favicon-C1f4Ughu.png" />
+    <!-- <base href="/cyberpunk/"> -->
+    <title>Cyberpunk</title>
+    <script type="module" crossorigin src="/cyberpunk/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/cyberpunk/assets/vendor-yB96FJs9.js">
+    <link rel="stylesheet" crossorigin href="/cyberpunk/assets/vendor-BUrcyj0q.css">
+    <link rel="stylesheet" crossorigin href="/cyberpunk/assets/index-4y5UORW9.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="/cyberpunk/assets/favicon-C1f4Ughu.png" />
-  <!-- <base href="/cyberpunk/"> -->
-  <title>Cyberpunk</title>
-  <script type="module" crossorigin src="/cyberpunk/index.js"></script>
-  <link rel="modulepreload" crossorigin href="/cyberpunk/assets/vendor-yB96FJs9.js">
-  <link rel="stylesheet" crossorigin href="/cyberpunk/assets/vendor-BUrcyj0q.css">
-  <link rel="stylesheet" crossorigin href="/cyberpunk/assets/index-tDLVVkUS.css">
-</head>
-
-<body class="scrollable-content">
-  <header class="header-section section">
+  <body class="scrollable-content">
+    <header class="header-section section">
   <div class="container header-container">
     <div>
       <a href="/" aria-label="Home Page">
@@ -62,8 +61,8 @@
   </div>
 </header>
 
-  <main>
-    <section class="section hero-section">
+    <main>
+      <section class="section hero-section">
   <div class="hero-container">
     <div class="swiper">
       <ul class="swiper-wrapper">
@@ -130,7 +129,7 @@
   </div>
 </section>
 
-    <section class="section about-section">
+      <section class="section about-section">
   <div class="container">
     <h2 class="about-main-text">Найт-Сити изменит тебя навсегда!</h2>
     <p class="about-Cyberpunk-information">
@@ -221,7 +220,7 @@
   </ul>
 </section>
 
-    <div class="line-gradient-top"></div>
+      <div class="line-gradient-top"></div>
 <section class="section contest-section">
   <div class="container">
     <div class="stock-container">
@@ -289,41 +288,54 @@
               </label>
             </li>
             <li class="form-item">
-              <label class="form-label form-input form-upload-photo" for="upload-photo">Прикрепить скриншот
+              <label class="form-label form-upload-photo" for="upload-photo">
+                <p class="text-upload-photo">Прикрепить скриншот</p>
+                <p class="format-upload-photo">.png / .jpg / .pdf</p>
               </label>
               <input class="upload-photo" id="upload-photo" type="file" placeholder="Прикрепить скриншот" required />
             </li>
             <li class="form-item">
               <button class="form-btn-submit" type="submit">Отправить</button>
               <input class="form-input-data-processing visually-hidden" type="checkbox" name="user-privacy"
-                id="data-processing" required>
+                id="data-processing" required />
               <label class="form-label-data-processing" for="data-processing">
                 <span class="fake-checkbox">
                   <svg class="fake-checkbox-icon" width="10" height="10" aria-label="checkbox or check mark icon">
                     <use href="/cyberpunk/assets/icons-BOjGo-st.svg#check-mark"></use>
                   </svg>
                 </span>
-                Согласен на обработку персональных
-                данных</label>
+                Согласен на обработку персональных данных</label>
             </li>
           </ul>
         </form>
       </li>
     </ul>
-
   </div>
 </section>
 <div class="line-gradient-bottom"></div>
-    <section class="section add-section">
+      <section class="section add-section">
   <div class="add-container container">
     <div class="add-container-item-first">
       <div>
         <picture>
-          <source srcset="/cyberpunk/assets/mobile-monitor-Bsb4sFs7.png 1x, /cyberpunk/assets/mobile-monitor@2x-DC4HjjDi.png 2x" media="(max-width: 767px)" />
-          <source srcset="/cyberpunk/assets/tablet-monitor-DkQhpgui.png 1x, /cyberpunk/assets/tablet-monitor@2x-C3QXaw6U.png 2x" media="(min-width: 768px)" />
+          <source
+            srcset="/cyberpunk/assets/mobile-monitor-Bsb4sFs7.png 1x, /cyberpunk/assets/mobile-monitor@2x-DC4HjjDi.png 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="/cyberpunk/assets/tablet-monitor-DkQhpgui.png 1x, /cyberpunk/assets/tablet-monitor@2x-C3QXaw6U.png 2x"
+            media="(min-width: 768px)"
+          />
 
-          <source srcset="/cyberpunk/assets/pc-monitor-Bd4Qd_mr.png 1x, /cyberpunk/assets/pc-monitor@2x-DDupI3Rd.png 2x" media="(min-width: 1280px)" />
-          <img src="/cyberpunk/assets/pc-monitor-Bd4Qd_mr.png" alt="Read Journey" class="add-monitor-image" />
+          <source
+            srcset="/cyberpunk/assets/pc-monitor-Bd4Qd_mr.png 1x, /cyberpunk/assets/pc-monitor@2x-DDupI3Rd.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <img
+            src="/cyberpunk/assets/pc-monitor-Bd4Qd_mr.png"
+            alt="Read Journey"
+            class="add-monitor-image"
+          />
         </picture>
       </div>
       <div class="add-svg-container">
@@ -339,7 +351,6 @@
       </div>
     </div>
     <div class="add-container-item-second">
-
       <h2 class="add-title">Полное погружение вместе с HP</h2>
       <p class="add-content">
         Погрузись в современные экшен-игры с реалистичным изображением с помощью
@@ -369,19 +380,22 @@
           </p>
         </li>
       </ul>
-      <a class="add-button"
+      <a
+        class="add-button"
         href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjN39fP4tmKAxWYpYMHHQAaFOAYABAMGgJlZg&co=1&ase=2&gclid=Cj0KCQiAst67BhCEARIsAKKdWOlnsZPE95SiGoPZV1xV8s4821DyjY6P9yOhQ69blbw-z1suca9VitoaAlYlEALw_wcB&ohost=www.google.com&cid=CAESVuD24kcLEz7Bc-NMw0scL_2FcQnmtqEklOZEoJsi6Sgc-GwGeptZYQUUK65aScVo4EtFdGrtjomwPVcWh2NFUtDWSygkVYjbYpnfUTiOFEd0Gjzwj_Id&sig=AOD64_1OjVq2M5UqjV6fTh4RFLUOOXzSmw&q&nis=4&adurl&ved=2ahUKEwiK0tHP4tmKAxXu3gIHHYITB4IQ0Qx6BAgKEAE"
-        target="_blank" rel="noopener noreferrer">
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Подробнее
       </a>
     </div>
   </div>
 </section>
-    <section class="section buyGame-section"></section>
 
-  </main>
-  <footer class="footer section"></footer>
+      <section class="section buyGame-section"></section>
 
-</body>
+    </main>
+    <footer class="footer section"></footer>
 
+  </body>
 </html>
