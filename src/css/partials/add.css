@@ -18,6 +18,10 @@
   gap: 25px;
 }
 
+.add-monitor-image {
+  user-select: none;
+}
+
 .add-title {
   margin-bottom: 25px;
 }
@@ -87,7 +91,7 @@
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .add-button:hover {

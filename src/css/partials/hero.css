@@ -10,9 +10,11 @@
   height: 713px;
   width: 100%;
   padding: 0;
-  z-index: -999;
+  /* z-index: -999; */
   position: relative;
+  user-select: text;
 }
+
 
 .swiper {
   height: 100%;
@@ -22,6 +24,8 @@
   left: 0;
   z-index: 1;
   user-select: none;
+  pointer-events: none;
+
 }
 
 .swiper-slide {
@@ -31,6 +35,69 @@
   /* background-repeat: no-repeat; */
   /* height: 100%; */
 }
+
+.information-container {
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+  z-index: 20000;
+  background-color: var(--yellow);
+  width: 320px;
+  height: 207px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  clip-path: polygon(0% 24.15%,
+      15.625% 0%,
+      100% 0%,
+      100% 75.85%,
+      84.375% 100%,
+      0% 100%);
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.hero-button {
+  width: 244px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--black);
+  color: var(--yellow);
+  font-size: 20px;
+  line-height: 200%;
+  border: 0;
+
+  transition: all 250ms ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+  border-color: var(--yellow);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: var(--yellow-dark);
+  color: var(--black);
+}
+
+/* .hero-button:hover,
+.hero-button:focus {
+  background-color: var(--light-blue);
+} */
 
 @media screen and (min-width: 768px) {
   .hero-section {
@@ -43,7 +110,31 @@
     height: 100vh;
     max-height: 1000px;
   }
+
+  .information-container {
+    width: 624px;
+    height: 369px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    bottom: 0px;
+
+    clip-path: polygon(0% 13.55%, 8.01% 0%, 100% 0%, 100% 86.45%, 91.99% 100%, 0% 100%);
+
+
+    padding: 70px;
+  }
+
+  .hero-title {
+    text-align: start;
+  }
+
+  .hero-button {
+    width: 272px;
+    height: 78px;
+
+    font-size: 24px;
+    line-height: 166.67%;
+  }
 }
 
-@media screen and (min-width: 1280px) {
-}
+@media screen and (min-width: 1440px) {}
