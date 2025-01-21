@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Archangelsk';
-  src: url('../../fonts/Archangelsk-Regular.ttf') format('truetype');
+  src: url('../fonts/Archangelsk-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
