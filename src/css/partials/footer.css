@@ -32,6 +32,14 @@
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
+
+  transition: color 250ms ease-in-out;
+  
+}
+
+.logo-item-text:hover,
+.logo-item-text:focus {
+  color: var(--light-blue);
 }
 
 .text-autor {
@@ -46,3 +54,65 @@
   font-size: 12px;
   line-height: normal;
 }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 13px;
+  }
+
+  .list {
+    flex-direction: row;
+    /* gap: 64px; */
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 13px;
+  }
+
+  
+
+  .menu-first {
+    gap: 0px;
+  }
+  .menu-second {
+    gap: 0px;
+  }
+
+  .menu {
+    flex-direction: row;
+    /* gap: 32px; */
+    gap: 15px;
+  }
+
+  /* .logo-item-text {
+    font-size: 18px;
+  } */
+
+}
+
+
+@media screen and (min-width: 1440px) {
+  .list {
+    justify-content: space-between;
+  }
+
+  .menu {
+    gap: 32px;
+  }
+
+  .logo-svg {
+    width: 296px;
+    height: 74px;
+  }
+
+  .logo-CD-Projekt {
+    width: 172px;
+    height: 74px;
+  }
+
+  .logo-item-text {
+    font-size: 18px;
+  }
+
+}
+
+
