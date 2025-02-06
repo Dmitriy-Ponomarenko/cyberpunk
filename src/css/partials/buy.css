@@ -1,2 +1,50 @@
 .buy-section {
+  background-color: var(--black);
+}
+
+.buy-image {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.buy-title {
+  color: var(--white);
+  margin-bottom: 25px;
+}
+
+.buy-list-first {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 18px;
+}
+
+.buy-list-second {
+  padding-bottom: 70px;
+}
+
+.buy-list-title {
+  color: var(--light-blue);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.buy-list-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.buy-list-item-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.buy-list-content {
+  color: var(--white);
+  font-style: normal;
+  line-height: normal;
 }

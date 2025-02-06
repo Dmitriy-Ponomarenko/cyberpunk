@@ -1,1 +1,77 @@
-<section class="section buyGame-section"></section>
+<section class="section buy-section">
+  <picture>
+    <source
+      srcset="
+        ./img/mobile/buy/mobile-buy.jpg    1x,
+        ./img/mobile/buy/mobile-buy@2x.jpg 2x
+      "
+      media="(max-width: 767px)"
+    />
+    <source
+      srcset="
+        ./img/tablet/buy/tablet-buy.jpg    1x,
+        ./img/tablet/buy/tablet-buy@2x.jpg 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="./img/pc/buy/pc-buy.jpg 1x, ./img/pc/buy/pc-buy.jpg@2x.jpg 2x"
+      media="(min-width: 1280px)"
+    />
+
+    <img src="./img/pc/buy/pc-buy.jpg" alt="Game disks" class="buy-image" />
+  </picture>
+  <div class="container buy-cotainer">
+    <h2 class="buy-title">Купить игру Cyberpunk 2077</h2>
+    <ul>
+      <h3 class="buy-list-title">В комплект входит:</h3>
+      <ul class="buy-list buy-list-first">
+        <li class="buy-list-item">
+          <svg class="buy-list-item-icon">
+            <use xlink:href="./img/icons.svg#disk"></use>
+          </svg>
+          <p class="buy-list-content">Футляр с игровыми дисками</p>
+        </li>
+        <li class="buy-list-item">
+          <svg class="buy-list-item-icon">
+            <use xlink:href="./img/icons.svg#tab"></use>
+          </svg>
+          <p class="buy-list-content">
+            Футляр с кодом для загрузки игры и дисками (pc)
+          </p>
+        </li>
+        <li class="buy-list-item">
+          <svg class="buy-list-item-icon">
+            <use xlink:href="./img/icons.svg#collections"></use>
+          </svg>
+          <p class="buy-list-content">
+            Справочник с информацией об игровом мире
+          </p>
+        </li>
+      </ul>
+      <h3 class="buy-list-title">Выберите платформу:</h3>
+      <ul class="buy-list buy-list-second">
+        <li class="buy-list-item">
+          <svg class="buy-list-company-icon">
+            <use xlink:href="./img/icons.svg#PC"></use>
+          </svg>
+        </li>
+        <li class="buy-list-item">
+          <svg class="buy-list-company-icon">
+            <use xlink:href="./img/icons.svg#Xbox"></use>
+          </svg>
+        </li>
+        <li class="buy-list-item">
+          <svg class="buy-list-company-icon">
+            <use xlink:href="./img/icons.svg#Stadia"></use>
+          </svg>
+        </li>
+        <li class="buy-list-item">
+          <svg class="buy-list-company-icon">
+            <use xlink:href="./img/icons.svg#PS4"></use>
+          </svg>
+        </li>
+      </ul>
+    </ul>
+  </div>
+</section>
