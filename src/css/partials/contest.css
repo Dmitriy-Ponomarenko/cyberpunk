@@ -166,7 +166,6 @@
   border-bottom: 1px solid var(--light-blue);
 }
 
-
 .form-upload-photo {
   height: 120px;
   display: flex;
@@ -176,13 +175,10 @@
   cursor: pointer;
 
   border: 1px dashed var(--grey);
-
-
-
 }
 
-.form-upload-photo:hover>.text-upload-photo,
-.form-upload-photo:focus>.text-upload-photo {
+.form-upload-photo:hover > .text-upload-photo,
+.form-upload-photo:focus > .text-upload-photo {
   text-decoration-color: var(--light-blue);
 }
 
@@ -272,15 +268,19 @@
   display: inline-block;
 }
 
-.form-input-data-processing:hover+.form-label-data-processing .fake-checkbox {
+.form-input-data-processing:hover + .form-label-data-processing .fake-checkbox {
   border-color: var(--light-blue);
 }
 
-.form-input-data-processing:active+.form-label-data-processing .fake-checkbox {
+.form-input-data-processing:active
+  + .form-label-data-processing
+  .fake-checkbox {
   border-color: var(--light-blue);
 }
 
-.form-input-data-processing:checked+.form-label-data-processing .fake-checkbox-icon {
+.form-input-data-processing:checked
+  + .form-label-data-processing
+  .fake-checkbox-icon {
   opacity: 1;
 }
 

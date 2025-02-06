@@ -34,7 +34,6 @@
   line-height: normal;
 
   transition: color 250ms ease-in-out;
-  
 }
 
 .logo-item-text:hover,
@@ -68,8 +67,6 @@
     margin-bottom: 13px;
   }
 
-  
-
   .menu-first {
     gap: 0px;
   }
@@ -86,9 +83,7 @@
   /* .logo-item-text {
     font-size: 18px;
   } */
-
 }
-
 
 @media screen and (min-width: 1440px) {
   .list {
@@ -112,7 +107,4 @@
   .logo-item-text {
     font-size: 18px;
   }
-
 }
-
-
