@@ -15,7 +15,6 @@
   user-select: text;
 }
 
-
 .swiper {
   height: 100%;
   /* width: 100%; */
@@ -25,7 +24,6 @@
   z-index: 1;
   user-select: none;
   pointer-events: none;
-
 }
 
 .swiper-slide {
@@ -50,12 +48,14 @@
   justify-content: center;
   gap: 25px;
 
-  clip-path: polygon(0% 24.15%,
-      15.625% 0%,
-      100% 0%,
-      100% 75.85%,
-      84.375% 100%,
-      0% 100%);
+  clip-path: polygon(
+    0% 24.15%,
+    15.625% 0%,
+    100% 0%,
+    100% 75.85%,
+    84.375% 100%,
+    0% 100%
+  );
 }
 
 .hero-title {
@@ -118,8 +118,14 @@
     align-items: flex-start;
     bottom: 0px;
 
-    clip-path: polygon(0% 13.55%, 8.01% 0%, 100% 0%, 100% 86.45%, 91.99% 100%, 0% 100%);
-
+    clip-path: polygon(
+      0% 13.55%,
+      8.01% 0%,
+      100% 0%,
+      100% 86.45%,
+      91.99% 100%,
+      0% 100%
+    );
 
     padding: 70px;
   }
@@ -137,4 +143,5 @@
   }
 }
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+}

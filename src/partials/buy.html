@@ -12,10 +12,10 @@
         ./img/tablet/buy/tablet-buy.jpg    1x,
         ./img/tablet/buy/tablet-buy@2x.jpg 2x
       "
-      media="(min-width: 768px)"
+      media="(min-width: 768px) and (max-width: 1279px)"
     />
     <source
-      srcset="./img/pc/buy/pc-buy.jpg 1x, ./img/pc/buy/pc-buy.jpg@2x.jpg 2x"
+      srcset="./img/pc/buy/pc-buy.jpg 1x, ./img/pc/buy/pc-buy@2x.jpg 2x"
       media="(min-width: 1280px)"
     />
 
@@ -52,24 +52,51 @@
       <h3 class="buy-list-title">Выберите платформу:</h3>
       <ul class="buy-list buy-list-second">
         <li class="buy-list-item">
-          <svg class="buy-list-company-icon">
-            <use xlink:href="./img/icons.svg#PC"></use>
-          </svg>
+          <a
+            href="https://www.mifcom.de/cp2077-gaming-pc-core-i7-12700-rtx-4070-id15850?gad_source=1&gclid=CjwKCAiA2JG9BhAuEiwAH_zf3sHxSNZU5OWPQBOkvl93DOa2uWXYTuSzWI7x_rRqXZObeB7CGPG0iBoC7KAQAvD_BwE"
+            target="_blank"
+          >
+            <svg
+              class="buy-list-company-icon pc-icon"
+              width="56.6"
+              height="32.5"
+            >
+              <use xlink:href="./img/icons.svg#PC"></use>
+            </svg>
+          </a>
         </li>
         <li class="buy-list-item">
-          <svg class="buy-list-company-icon">
-            <use xlink:href="./img/icons.svg#Xbox"></use>
-          </svg>
+          <a href="https://www.xbox.com/" target="_blank">
+            <svg
+              class="buy-list-company-icon xbox-icon"
+              width="178"
+              height="35"
+            >
+              <use xlink:href="./img/icons.svg#Xbox"></use>
+            </svg>
+          </a>
         </li>
         <li class="buy-list-item">
-          <svg class="buy-list-company-icon">
-            <use xlink:href="./img/icons.svg#Stadia"></use>
-          </svg>
+          <a href="https://stadia.google.com/" target="_blank">
+            <svg
+              class="buy-list-company-icon stadia-icon"
+              width="58"
+              height="50"
+            >
+              <use xlink:href="./img/icons.svg#Stadia"></use>
+            </svg>
+          </a>
         </li>
         <li class="buy-list-item">
-          <svg class="buy-list-company-icon">
-            <use xlink:href="./img/icons.svg#PS4"></use>
-          </svg>
+          <a href="https://www.playstation.com/" target="_blank">
+            <svg
+              class="buy-list-company-icon ps4-icon"
+              width="168.6"
+              height="35"
+            >
+              <use xlink:href="./img/icons.svg#PS4"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </ul>
